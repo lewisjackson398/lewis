@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://gallant-hawking-7097b1.netlify.app/",
+  "homepage": "https://lewisjackson.netlify.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
