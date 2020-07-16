@@ -4,7 +4,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello, React!</h1>
+        <h1>The site is currently being updated.</h1>
+        <h2>Please try again soon!</h2>
       </div>
     )
   }
