@@ -4,14 +4,23 @@
   "homepage": "https://lewisjackson.netlify.app/",
   "private": true,
   "dependencies": {
+    "@carbon/icons-react": "^10.13.0",
+    "@carbon/themes": "^10.14.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "carbon-components": "^10.15.0",
+    "carbon-components-react": "^7.15.0",
     "gatsby": "^2.24.3",
     "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1",
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

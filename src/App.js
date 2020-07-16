@@ -1,14 +1,22 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react';
+import Pages from '../src/pages';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>The site is currently being updated.</h1>
-        <h2>Please try again soon!</h2>
-      </div>
-    )
+function App() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    // NOTE: Use your username below
+    fetch('https://gitconnected.com/v1/portfolio/lewisjackson398')
+      .then(res => res.json())
+      .then(user => {
+        setUser(user);
+      });
+  }, []);
+
+  if (!user) {
+    return <div />;
   }
+
+  return <Pages user={user} />;
 }
 
-export default App
+export default App;
