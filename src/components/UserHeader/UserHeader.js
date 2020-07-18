@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { ArrowRight16 } from '@carbon/icons-react';
+import Pdf from '../../LewisJacksonCV.pdf';
 
 import { HeaderContainer, Header, Image, ViewResumeLink } from './styles';
 
@@ -31,9 +32,8 @@ const UserHeader = ({ user }) => {
             </Header>
             <div>
                 <ViewResumeLink
-                    href={`https://gitconnected.com/${user.basics.username}/resume`}
+                    href={Pdf}
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
                     <span>View Résumé</span>
                     <ArrowRight16 />
